@@ -4,7 +4,8 @@ local PLACES = {
     PETSIM99 = {8737899170, 17503543197, 16498369169, 15502339080, 15588442388, 140403681187145},
     EVADE = {9872472334},
     BENPCORDIE = {11276071411},
-    FNAFPIZZA = {10912748908, 10963494864, 15069810470, 15324232580}
+    FNAFPIZZA = {10912748908, 10963494864, 15069810470, 15324232580},
+    STEALAPET = {74866348003583}
 }
 
 local function isCurrentPlace(gameTable)
@@ -27,6 +28,9 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Fishka132312/-FIRE-Be
 
 elseif isCurrentPlace(PLACES.FNAFPIZZA) then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Fishka132312/-CHAPTER-2-FNAF-Pizza-Party/refs/heads/main/Pizza%20party.lua'))()
+
+elseif isCurrentPlace(PLACES.STEALAPET) then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Fishka132312/Steal-a-pet/refs/heads/main/steal%20a%20pet.lua'))()
 
 else
     print("--- Script: This mode is not supported, I run the default script. ---")
