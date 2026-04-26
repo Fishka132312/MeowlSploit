@@ -5,7 +5,8 @@ local PLACES = {
     EVADE = {9872472334},
     BENPCORDIE = {11276071411},
     FNAFPIZZA = {10912748908, 10963494864, 15069810470, 15324232580},
-    STEALAPET = {74866348003583}
+    STEALAPET = {74866348003583},
+    PUNCHSIM = {14236123211}
 }
 
 local function isCurrentPlace(gameTable)
@@ -31,6 +32,9 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Fishka132312/-CHAPTER
 
 elseif isCurrentPlace(PLACES.STEALAPET) then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Fishka132312/Steal-a-pet/refs/heads/main/steal%20a%20pet.lua'))()
+
+elseif isCurrentPlace(PLACES.PUNCHSIM) then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Fishka132312/Punch-sim/refs/heads/main/test.lua"))()
 
 else
     print("--- Script: This mode is not supported, I run the default script. ---")
