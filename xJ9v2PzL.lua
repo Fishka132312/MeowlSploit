@@ -3,7 +3,8 @@ local placeId = game.PlaceId
 local PLACES = {
     PETSIM99 = {8737899170, 17503543197, 16498369169, 15502339080, 15588442388, 140403681187145},
     EVADE = {9872472334},
-    BENPCORDIE = {11276071411}
+    BENPCORDIE = {11276071411},
+    FNAFPIZZA = {10912748908, 10963494864, 15069810470, 15324232580}
 }
 
 local function isCurrentPlace(gameTable)
@@ -23,6 +24,9 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Fishka132312/Evade/re
 
 elseif isCurrentPlace(PLACES.BENPCORDIE) then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Fishka132312/-FIRE-Be-NPC-or-DIE-/refs/heads/main/%5B%F0%9F%90%89FIRE%5D%20Be%20NPC%20or%20DIE!%F0%9F%92%A2.lua'))()
+
+if isCurrentPlace(PLACES.FNAFPIZZA) then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Fishka132312/-CHAPTER-2-FNAF-Pizza-Party/refs/heads/main/Pizza%20party.lua'))()
 
 else
     print("--- Script: This mode is not supported, I run the default script. ---")
